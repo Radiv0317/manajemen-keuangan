@@ -1,4 +1,4 @@
-Buy me a fckng server & domain [https://saweria.co/maikelfapk]
+# Buy me a fckng server & domain [https://saweria.co/maikelfapk]
 # Flask Financial Management
 
 This is a simple application that utilizes Flask, a Python web framework, to manage user transactions and balances.
