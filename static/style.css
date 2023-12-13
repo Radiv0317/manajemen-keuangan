@@ -1,0 +1,186 @@
+/* style.css */
+
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0; /* Hapus margin pada body */
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    flex: 0 0 calc(33.333% - 20px); /* Sesuaikan dengan jumlah kartu dan margin */
+    margin-bottom: 20px;
+    background-color: #007bff; /* Tambahkan warna background */
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: white;
+    border: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Warna judul card */
+}
+
+.card-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Warna teks angka */
+}
+
+/* Masukkan CSS ini ke dalam file Anda */
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 100%;
+    padding: 10px; /* Sesuaikan padding pada tombol */
+    font-size: 16px; /* Sesuaikan ukuran font tombol */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Untuk tampilan mobile dan tablet */
+@media (max-width: 999px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .list-group-item {
+        padding: 8px;
+    }
+    #transaction-form .form-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+    #transaction-form button[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
